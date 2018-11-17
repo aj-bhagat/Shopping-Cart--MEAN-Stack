@@ -13,6 +13,8 @@ const appRoutes: Routes = [
   { path: 'men', component: MenComponent },
   { path: 'women',      component: WomenComponent },
   { path: 'home',      component: HomeComponent },
+  { path: 'home/men', component: MenComponent },
+  { path: 'home/women',      component: WomenComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
