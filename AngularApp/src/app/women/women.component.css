@@ -8,3 +8,6 @@
     height: 20vw;
     object-fit: inherit;
 }
+.col-md-4 {
+max-width: 25%;
+}
