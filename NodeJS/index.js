@@ -8,4 +8,4 @@ var app =express();
 app.use(bodyparse.json());
 app.use (cors({origin:"http://localhost:4200"}));
 app.listen(3000, ()=>console.log('Server started at port : 3000'));
-app.use('/articles',articlecontroller);
+app.use('/products',articlecontroller);
