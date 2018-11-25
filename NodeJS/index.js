@@ -3,7 +3,7 @@ const bodyparse= require('body-parser');
 const cors= require('cors');
 
 const {mongoose}= require('./db.js');
-var articlecontroller = require ('./controllers/articleController.js');
+var articlecontroller = require ('./controllers/productController.js');
 var app =express();
 app.use(bodyparse.json());
 app.use (cors({origin:"http://localhost:4200"}));
