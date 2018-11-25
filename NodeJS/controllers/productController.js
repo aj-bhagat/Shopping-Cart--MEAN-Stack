@@ -2,10 +2,10 @@ const express = require('express');
 var mongoose = require ('mongoose');
 var router = express.Router();
 
-var {Article} = require('../model/article');
+var {Product} = require('../model/product');
 
 router.get('/',(req,res)=>{
-    Article.find((err,docs)=>{
+    Product.find((err,docs)=>{
         if(!err) {res.send(docs);}
         else {console.log('Error in Retriving Article :'+JSON.stringify(err,undefined,2));}
     });

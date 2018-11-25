@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost:27017/article',{ useNewUrlParser: true },(err)=>{
+mongoose.connect('mongodb://localhost:27017/mycart',{ useNewUrlParser: true },(err)=>{
     if(!err)
         console.log('MongoDB connection succeeded.');
     else
