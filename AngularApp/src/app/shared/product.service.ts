@@ -9,7 +9,7 @@ import {Product} from './product'
   providedIn: 'root'
 })
 export class ProductService {
-  article: Product[];
+  product: Product[];
   readonly baseURL: string="http://localhost:3000/articles";
   constructor(private http: HttpClient) { }
   getArticle(){
