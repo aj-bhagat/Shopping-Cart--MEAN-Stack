@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { HomeComponent } from './home/home.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'men', component: MenComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   exports:[RouterModule],
   providers: [],

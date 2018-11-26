@@ -10,7 +10,7 @@ import {Product} from './product'
 })
 export class ProductService {
   product: Product[];
-  readonly baseURL: string="http://localhost:3000/articles";
+  readonly baseURL: string="http://localhost:3000/products";
   constructor(private http: HttpClient) { }
   getArticle(){
     return this.http.get(this.baseURL);
