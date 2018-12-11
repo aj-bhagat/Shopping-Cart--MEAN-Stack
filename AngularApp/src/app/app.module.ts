@@ -9,6 +9,7 @@ import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
 
 const appRoutes: Routes = [
   { path: 'men', component: MenComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     FooterComponent,
     MenComponent,
     WomenComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent
   ],
   imports: [
     RouterModule.forRoot(
